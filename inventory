@@ -1,0 +1,6 @@
+[controlhost]
+control_host
+
+[apphost]
+appnode1
+appnode2

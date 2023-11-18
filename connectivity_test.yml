@@ -1,0 +1,12 @@
+---
+- name: Servers Connectivity Test
+  hosts: all
+  tasks:
+    - name: Connecting Server
+      ansible.builtin.ping:
+      register: output
+
+    - name: message
+      ansible.builtin.debug:
+        var: output
+...

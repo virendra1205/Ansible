@@ -1,0 +1,11 @@
+---
+- name: Using ENV variable using environment
+  hosts: all
+  gather_facts: false
+  environment:
+    host: "{{ ansible_fqdn }}"
+  tasks:
+    - name: print hostname
+      ansible.builtin.debug:
+        msg: "{{ host }}"
+...

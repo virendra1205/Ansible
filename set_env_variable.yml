@@ -5,7 +5,6 @@
   environment:
     host: "{{ ansible_fqdn }}"
   tasks:
-    - name: print hostname
-      ansible.builtin.debug:
-        msg: "{{ host }}"
+    - name: "print hostname"
+      ansible.builtin.command: "echo $host"
 ...

@@ -3,9 +3,9 @@
   hosts: all
   gather_facts: false
   environment:
-    host: "{{ ansible_fqdn }}"
+    EXAMPLE: NA
   tasks:
-    - name: "print hostname"
+    - name: print hostname
       ansible.builtin.debug:
-        msg: "{{ ansible_env }}"
+        msg: "{{ansible_env}}"
 ...
